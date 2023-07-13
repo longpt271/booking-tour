@@ -1,0 +1,70 @@
+.explore {
+  position: relative;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.explore::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url(./explore-bg.jpg) no-repeat;
+  background: -webkit-linear-gradient(
+      rgba(17, 17, 17, 0.7),
+      rgba(17, 17, 17, 0.7)
+    ),
+    url(./explore-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.explore .content span {
+  font-size: 1.3rem;
+  color: var(--active-color);
+}
+
+.explore .content h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.explore .content p {
+  max-width: 40rem;
+  margin: 1rem auto;
+  color: #aaa;
+  line-height: 2;
+  text-align: center;
+}
+
+.explore button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1rem;
+  color: var(--active-color);
+  border: 2px solid var(--active-color);
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+  text-transform: capitalize;
+}
+
+.explore button:hover {
+  background: var(--active-color);
+  color: #111;
+}
+
+@media (max-width: 450px) {
+  .explore .content h3 {
+    font-size: 2.7rem;
+  }
+}

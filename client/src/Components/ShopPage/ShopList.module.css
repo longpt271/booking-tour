@@ -1,0 +1,9 @@
+.shop__sidebar {
+  background: #f9f9f9;
+}
+
+.shop__sidebar strong {
+  display: inline-block;
+  margin-bottom: 5px;
+  letter-spacing: 0.1em;
+}

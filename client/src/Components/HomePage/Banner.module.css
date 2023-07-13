@@ -1,0 +1,11 @@
+.banner {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+}
+
+.banner h2 {
+  font-weight: 900;
+  line-height: 1.2;
+}

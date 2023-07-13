@@ -1,0 +1,37 @@
+.footer {
+  background-color: #111;
+}
+
+.footer li a {
+  position: relative;
+  left: 0;
+  color: #999;
+  transition: all 0.3s;
+
+  text-decoration: none;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.footer li a:hover,
+.footer li a:focus {
+  left: 10px;
+  color: var(--active-color);
+  transition-duration: 0.5s;
+}
+
+/* brands */
+.footer-brands {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-brands svg {
+  width: 12px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}

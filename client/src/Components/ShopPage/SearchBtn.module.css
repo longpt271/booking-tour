@@ -1,0 +1,11 @@
+.btnSearch {
+  background: #fff;
+  box-shadow: 0 2px 0 #e2f3ff;
+  border-radius: 5px;
+}
+
+.btnSearch:hover,
+.btnActive {
+  color: #fff;
+  background-color: #3f3f3f;
+}

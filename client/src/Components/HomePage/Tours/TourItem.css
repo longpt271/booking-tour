@@ -1,0 +1,87 @@
+.tour-item {
+  border-radius: 10px;
+  background: #f8f9fa;
+  border: 1px solid #dddfe2;
+  overflow: hidden;
+
+  height: 100%;
+  color: #2d4271;
+  line-height: 1.5;
+}
+
+.tour-item:hover {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.tour-item:hover .image img {
+  transform: scale(1.1);
+}
+
+.tour-item-image {
+  height: 250px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.tour-item-image img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.tour-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+}
+
+.tour-content a {
+  font-weight: 700;
+  font-size: 1em;
+  color: #62329d;
+  text-decoration: none;
+
+  width: fit-content;
+  margin-bottom: 5px;
+}
+
+.tour-content .tour-name {
+  white-space: nowrap; /* k cho xuống dòng */
+  overflow: hidden; /* hide phần chữ thừa */
+  text-overflow: ellipsis; /* Thêm dấu '...' */
+}
+
+.current__discount {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  padding: 5px 8px;
+  background-color: #fd5056;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 11px;
+}
+
+.locationStart {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price__old {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.current__price {
+  font-weight: 700;
+  color: #fd5056;
+  font-size: 16px;
+}
